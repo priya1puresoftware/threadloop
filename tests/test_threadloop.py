@@ -18,7 +18,7 @@ def clear_io_loop():
     ioloop.IOLoop.clear_current()
 
 
-@pytest.yield_fixture
+@pytest.fixture 
 def threadloop():
     with ThreadLoop() as threadloop:
         yield threadloop
